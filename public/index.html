@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Be+Vietnam+Pro:wght@100;300;400&family=Bebas+Neue&family=Cabin:wght@700&family=Fira+Sans+Condensed:wght@400;500&family=Fraunces:wght@700;900&family=Heebo:wght@300;400;600&family=Kumbh+Sans:wght@400;700&family=Lato&family=Montserrat:wght@300;500&family=Mulish:wght@300;400;700&family=Orbitron:wght@500&family=Poppins:wght@200;300;400;600&family=Prompt:wght@300&family=Roboto+Mono:wght@400;500&family=Rubik:wght@400;500;600;700&family=Spartan:wght@500;700&family=Ubuntu:ital,wght@0,400;0,700;1,500&display=swap"
+        rel="stylesheet">
+    <title>MyFigureCollectin.net</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-layout">
+        </div>
+        <nav class="nav-bar">
+            <div class="header-layout">
+            </div>
+            <div class="nav-bar__site-name-container nav-bar__site-name-container--mob" data-nav-bar__button-container>
+                <a href="#" class="nav-bar__site-name nav-bar__site-name--mob" data-nav-bar__button>
+                    <div class="nav-bar__logo-container" data-nav-bar__button>
+                        <img class="nav-bar__logo" src="../dist/nav-bar/webicon.png" alt="" data-nav-bar__button>
+                    </div>
+                    <span data-nav-bar__button>
+                        MFC
+                    </span>
+                    <i class="fas fa-bars" data-nav-bar__button></i>
+                </a>
+                <ul class="nav-bar__site-name-float-list">
+                    <div class="nav-bar__site-name-input-container">
+                        <input class="nav-bar__site-name-input" placeholder="keywords" type="text">
+                    </div>
+                    <li class="nav-bar__site-name-float-item">
+                        <a class="nav-bar__site-name-float-link" href="#">
+                            Databases
+                        </a>
+                    </li>
+                    <li class="nav-bar__site-name-float-item">
+                        <a class="nav-bar__site-name-float-link" href="#">
+                            Pictures
+                        </a>
+                    </li>
+                    <li class="nav-bar__site-name-float-item">
+                        <a class="nav-bar__site-name-float-link" href="#">
+                            Comunnity
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <a href="#" class="nav-bar__site-name nav-bar__site-name--desktop">
+                <div class="nav-bar__logo-container">
+                    <img class="nav-bar__logo" src="../dist/nav-bar/webicon.png" alt="">
+                </div>
+                <span>
+                    MY
+                </span>
+                <strong class="text-figure">
+                    FIGURE
+                </strong>
+                <span>
+                    COLLECTION
+                </span>
+            </a>
+            <ul class="nav-bar__list">
+                <li class="nav-bar__item">
+                    <a class="nav-bar__link" href="#">
+                        <p>Databases</p>
+                    </a>
+                    <ul class="nav-bar__item-list">
+                        <li class="nav-bar__item-item">
+                            <a class="nav-bar__item-link nav-bar__item-link--border" href="#">
+                                Activity
+                            </a>
+                        </li>
+                        <li class="nav-bar__item-item">
+                            <a class="nav-bar__item-link" href="#">
+                                Figures
+                            </a>
+                        </li>
+                        <li class="nav-bar__item-item">
+                            <a class="nav-bar__item-link" href="#">
+                                Goods
+                            </a>
+                        </li>
+                        <li class="nav-bar__item-item">
+                            <a class="nav-bar__item-link nav-bar__item-link--border" href="#">
+                                Media
+                            </a>
+                        </li>
+                        <li class="nav-bar__item-item">
+                            <a class="nav-bar__item-link" href="#">
+                                Search
+                            </a>
+                        </li>
+                        <li class="nav-bar__item-item">
+                            <a class="nav-bar__item-link" href="#">
+                                Calendar
+                            </a>
+                        </li>
+                        <li class="nav-bar__item-item">
+                            <a class="nav-bar__item-link nav-bar__item-link--border" href="#">
+                                Top 100
+                            </a>
+                        </li>
+                        <li class="nav-bar__item-item">
+                            <a class="nav-bar__item-link" href="#">
+                                Encyclopedia
+                            </a>
+                        </li>
+                        <li class="nav-bar__item-item">
+                            <a class="nav-bar__item-link" href="#">
+                                Tags
+                            </a>
+                        </li>
+                        <li class="nav-bar__item-item">
+                            <a class="nav-bar__item-link" href="#">
+                                Shops
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-bar__item">
+                    <a class="nav-bar__link" href="#">Pictures</a>
+                </li>
+                <li class="nav-bar__item">
+                    <a class="nav-bar__link" href="#">Community</a>
+                </li>
+            </ul>
+            <div class="nav-bar__input-container">
+                <input class="nav-bar__input" type="text" placeholder="Search">
+            </div>
+            <div class="nav-bar__button-container nav-bar__button-container--width" data-nav-bar__button-container>
+                <button class="nav-bar__button" data-nav-bar__button>
+                    <i class="fas fa-sort-down" data-nav-bar__button>
+                    </i>
+                </button>
+                <ul class="nav-bar__float-list">
+                    <li class="nav-bar__float-item">
+                        <a class="nav-bar__float-link" href="#">
+                            <i class="fas fa-sign-in-alt fa-sm"></i> Sign In
+                        </a>
+                    </li>
+                    <li class="nav-bar__float-item">
+                        <a class="nav-bar__float-link" href="#">
+                            <i class="fas fa-user-plus fa-sm"></i> Sign Up
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-bar__button-container nav-bar__button-container--shrink" data-nav-bar__button-container>
+                <button class="nav-bar__button nav-bar__button--font-size" data-nav-bar__button>
+                    <h1 class="nav-bar__button-title" data-nav-bar__button>
+                        EN
+                    </h1>
+                </button>
+                <ul class="nav-bar__float-list nav-bar__float-list--right">
+                    <li class="nav-bar__float-item">
+                        <a class="nav-bar__float-link" href="#">
+                            English
+                        </a>
+                    </li>
+                    <li class="nav-bar__float-item">
+                        <a class="nav-bar__float-link" href="#">
+                            Spanish
+                        </a>
+                    </li>
+                    <li class="nav-bar__float-item">
+                        <a class="nav-bar__float-link" href="#">
+                            Deutsch
+                        </a>
+                    </li>
+                    <li class="nav-bar__float-item">
+                        <a class="nav-bar__float-link" href="#">
+                            Suomeksi
+                        </a>
+                    </li>
+                    <li class="nav-bar__float-item">
+                        <a class="nav-bar__float-link" href="#">
+                            Italian
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="home-block">
+        <div class="home">
+            <div class="home__container home__container--color">
+                <div class="home__icon-container">
+                    <i class="fas fa-home"></i>
+                </div>
+                <h1 class="home__title">
+                    Home
+                </h1>
+            </div>
+            <div class="home__container home__container--gap">
+                <a href="#" class="home__container home__container--link">
+                    <i class="fas fa-sign-in-alt"></i>
+                    <h2 class="home__left-title">
+                        Sign In
+                    </h2>
+                </a>
+                <a href="#" class="home__container home__container--link">
+                    <i class="fas fa-user-plus"></i>
+                    <h2 class="home__left-title">
+                        Sign Up
+                    </h2>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="body">
+        <div class="body__layout"></div>
+        <div class="body__container">
+            <div class="body__left-container">
+                <div class="body__about">
+                    <div class="body__title-container body__title-container--start">
+                        <h2 class="body__title">
+                            <i class="fas fa-info-circle"></i>
+                            About
+                        </h2>
+                    </div>
+                    <p class="body__paragraph">
+                        MyFigureCollection.net is a service for Japanese pop-culture (anime, manga, video-games,
+                        etc.) goods (figures, artbooks, CDs, cups, collectibles, dakimakura, etc.) collectors. Join
+                        our friendly community for free and start listing and managing your collection online:
+                        databases, pictures, calendar, budget manager, encyclopedia and much more...
+                    </p>
+                    <div class="body__social">
+                        <a href="#">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-pinterest-p"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="body__partner">
+                    <div class="body__title-container">
+                        <h2 class="body__title">
+                            <i class="fas fa-shopping-cart"></i>
+                            Partner shops approved by MFC
+                        </h2>
+                        <a class="body__title-link" href="#">
+                            View more
+                        </a>
+                    </div>
+                    <div class="body__partner-link-container">
+                        <a class="body__partner-link" href="#">
+                            <img class="body__partner-img" src="../dist/artner shops approved by MFC/34.jpg" alt="">
+                            <p class="body__partner-subtitle">
+                                Kozuguru
+                            </p>
+                        </a>
+                        <a class="body__partner-link" href="#">
+                            <img class="body__partner-img" src="../dist/artner shops approved by MFC/46.jpg" alt="">
+                            <p class="body__partner-subtitle">
+                                Aitai☆Kuji
+                            </p>
+                        </a>
+                        <a class="body__partner-link" href="#">
+                            <img class="body__partner-img" src="../dist/artner shops approved by MFC/64.jpg" alt="">
+                            <p class="body__partner-subtitle">
+                                Neokyo
+                            </p>
+                        </a>
+                        <a class="body__partner-link" href="#">
+                            <img class="body__partner-img" src="../dist/artner shops approved by MFC/66.jpg" alt="">
+                            <p class="body__partner-subtitle">
+                                Hobby Genki
+                            </p>         
+                        </a>
+                        <a class="body__partner-link" href="#">
+                            <img class="body__partner-img" src="../dist/artner shops approved by MFC/74.jpg" alt="">
+                            <p class="body__partner-subtitle">
+                                USA Gundam Store
+                            </p>                           
+                        </a>
+                        <a class="body__partner-link" href="#">
+                            <img class="body__partner-img" src="../dist/artner shops approved by MFC/75.jpg" alt="">                
+                            <p class="body__partner-subtitle">
+                                Otaku Square
+                            </p>
+                        </a>
+                        <a class="body__partner-link" href="#">
+                            <img class="body__partner-img" src="../dist/artner shops approved by MFC/82.jpg" alt="">            
+                            <p class="body__partner-subtitle">
+                                Figuya GmbH Jessica Ja
+                            </p>
+                        </a>
+                        <a class="body__partner-link" href="#">
+                            <img class="body__partner-img" src="../dist/artner shops approved by MFC/87.jpg" alt="">      
+                            <p class="body__partner-subtitle">
+                                Nin-Nin-Game
+                            </p>
+                        </a>
+                        <a class="body__partner-link" href="#">
+                            <img class="body__partner-img" src="../dist/artner shops approved by MFC/88.jpg" alt="">     
+                            <p class="body__partner-subtitle">
+                                Solaris Japan
+                            </p>
+                        </a>
+                        <a class="body__partner-link" href="#">
+                            <img class="body__partner-img" src="../dist/artner shops approved by MFC/89.jpg" alt="">       
+                            <p class="body__partner-subtitle">
+                                Akiba Soul
+                            </p>     
+                        </a>
+                    </div>
+                </div>
+                <div class="body__pictures">
+                    <div class="body__title-container">
+                        <h2 class="body__title">
+                            <i class="fas fa-camera"></i>
+                            Pictures
+                        </h2>
+                        <a class="body__title-link" href="#">
+                            View more
+                        </a>
+                    </div>
+                    <div class="body__pictures-gallery">
+                        <ul class="body__link-container">
+                            <li class="body__item">
+                                <a class="body__link" href="#">Pictures OTD</a>
+                            </li>
+                            <li class="body__item">
+                                <a class="body__link" href="#">Pictures OTW</a>
+                            </li>
+                            <li class="body__item">
+                                <a class="body__link" href="#">Pictures OTM</a>
+                            </li>
+                            <li class="body__item">
+                                <a class="body__link" href="#">Latest Pictures</a>
+                            </li>
+                            <li class="body__item">
+                                <a class="body__link" href="#">Subscriptions</a>
+                            </li>
+                        </ul>
+                        <div class="body__gallery">
+                            <div class="body__left-picture-container">
+                                <img class="body__main-picture" src="../dist/pictures/2984136.jpeg" alt="">
+                            </div>
+                            <div class="body__right-picture-container">
+                                <a href="#" class="body__picture-link">
+                                    <img class="body__picture" src="../dist/pictures/2983659.jpeg" alt="">
+                                </a>
+                                <a href="#" class="body__picture-link">
+                                    <img class="body__picture" src="../dist/pictures/2983897.png" alt="">
+                                </a>
+                                <a href="#" class="body__picture-link">
+                                    <img class="body__picture" src="../dist/pictures/2984058.jpeg" alt="">
+                                </a>
+                                <a href="#" class="body__picture-link">
+                                    <img class="body__picture" src="../dist/pictures/2984486.jpeg" alt="">
+                                </a>
+                                <a href="#" class="body__picture-link">
+                                    <img class="body__picture" src="../dist/pictures/2984141.jpeg" alt="">
+                                </a>
+                                <a href="#" class="body__picture-link">
+                                    <img class="body__picture" src="../dist/pictures/2984591.jpeg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="body__featured">
+                    <div class="body__title-container">
+                        <h2 class="body__title">
+                            <i class="fas fa-mug-hot"></i>
+                            Pictures
+                        </h2>
+                        <div class="body__title-link-container">
+                            <a class="body__title-link" href="#">
+                                View more
+                            </a>
+                            <a class="body__title-link" href="#">
+                                My ads here?
+                            </a>
+                        </div>
+                    </div>
+                    <div class="body__featured-container">
+                        <div class="body__featured-box">
+                            <div class="body__featured-img-container">
+                                <img class="body__featured-img" src="../dist/Featured Sales/806242.jpg" alt="">
+                            </div>
+                            <div class="body__featured-text-container">
+                                <a class="body__featured-link" href="#">
+                                    <h2 class="body__featured-title"><i
+                                            class="fas fa-camera fa-xs body__featured-icon"></i>Overlord - Albedo -
+                                        F:Nex - 1/8 - Yukata (FuRyu)</h2>
+                                </a>
+                                <div class="body__featured-subtitle">
+                                    <span>
+                                        Sale&nbsp;•
+                                    </span>
+                                    <span>
+                                        &nbsp;6 days ago&nbsp;•&nbsp;
+                                    </span>
+                                    <a class="body__featured-link" href="#">
+                                        <span class="body__featured-subtitle-bold">
+                                            soratusukii
+                                        </span>
+                                    </a>
+                                    <span>
+                                        &nbsp;(100%)
+                                    </span>
+                                </div>
+                                <span class="body__featured-price">
+                                    $180.00
+                                </span>
+                                <span class="body__featured-under-text">
+                                    New, MISB. Both overlord yukatas for $350 shipping included (US/CAN) Shipping to...
+                                </span>
+                            </div>
+                        </div>
+                        <div class="body__featured-box">
+                            <div class="body__featured-img-container">
+                                <img class="body__featured-img" src="../dist/Featured Sales/1078187.jpg" alt="">
+                            </div>
+                            <div class="body__featured-text-container">
+                                <a class="body__featured-link" href="#">
+                                    <h2 class="body__featured-title"><i
+                                            class="fas fa-camera fa-xs body__featured-icon"></i>Piapro Characters -
+                                        Hatsune Miku - F:Nex - Magical Mirai 2020 Summer Festival Ver. (FuRyu)</h2>
+                                </a>
+                                <div class="body__featured-subtitle">
+                                    <span>
+                                        Sale&nbsp;•
+                                    </span>
+                                    <span>
+                                        &nbsp;6 days ago&nbsp;•&nbsp;
+                                    </span>
+                                    <a class="body__featured-link" href="#">
+                                        <span class="body__featured-subtitle-bold">
+                                            soratusukii
+                                        </span>
+                                    </a>
+                                    <span>
+                                        &nbsp;(100%)
+                                    </span>
+                                </div>
+                                <span class="body__featured-price">
+                                    $310.00
+                                </span>
+                                <span class="body__featured-under-text">
+                                    Selling this adorable Miku because I prefer her winter design personally. Both ...
+                                </span>
+                            </div>
+                        </div>
+                        <div class="body__featured-box">
+                            <div class="body__featured-img-container">
+                                <img class="body__featured-img" src="../dist/Featured Sales/919611.jpg" alt="">
+                            </div>
+                            <div class="body__featured-text-container">
+                                <a class="body__featured-link" href="#">
+                                    <h2 class="body__featured-title"><i
+                                            class="fas fa-camera fa-xs body__featured-icon"></i>Persona 5 The Royal -
+                                        Yoshizawa Kasumi - ARTFX J - 1/8 - Phantom Thief ver. (Kotobukiya)
+                                    </h2>
+                                </a>
+                                <div class="body__featured-subtitle">
+                                    <span>
+                                        Sale&nbsp;•
+                                    </span>
+                                    <span>
+                                        &nbsp;6 days ago&nbsp;•&nbsp;
+                                    </span>
+                                    <a class="body__featured-link" href="#">
+                                        <span class="body__featured-subtitle-bold">
+                                            soratusukii
+                                        </span>
+                                    </a>
+                                    <span>
+                                        &nbsp;(100%)
+                                    </span>
+                                </div>
+                                <span class="body__featured-price">
+                                    $180.00
+                                </span>
+                                <span class="body__featured-under-text">
+                                    New, MISB. i believe she doesnt come with her kotobukiya bonus. Price negotiable. ..
+                                </span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="body__databases">
+                    <div class="body__title-container">
+                        <h2 class="body__title">
+                            <i class="fas fa-th"></i>
+                            Partner shops approved by MFC
+                        </h2>
+                        <a class="body__title-link" href="#">
+                            View more
+                        </a>
+                    </div>
+                    <ul class="body__link-container">
+                        <li class="body__item">
+                            <a class="body__link body__link--padding" href="#">Items on Fire</a>
+                        </li>
+                        <li class="body__item">
+                            <a class="body__link body__link--padding" href="#">Figures</a>
+                        </li>
+                        <li class="body__item">
+                            <a class="body__link body__link--padding" href="#">Goods</a>
+                        </li>
+                        <li class="body__item">
+                            <a class="body__link body__link--padding" href="#">Media</a>
+                        </li>
+                        <li class="body__item">
+                            <a class="body__link body__link--padding" href="#">Subscriptions</a>
+                        </li>
+                    </ul>
+                    <div class="body__databases-gallery">
+                        <div class="body__databases-container">
+                            <div class="body__databases-layout">
+
+                            </div>
+                            <img class="body__databases-picture" src="../dist/database/1049502.jpg" alt="">
+                        </div>
+                        <div class="body__databases-container">
+                            <div class="body__databases-layout">
+
+                            </div>
+                            <img class="body__databases-picture" src="../dist/database/1064642.jpg" alt="">
+                        </div>
+                        <div class="body__databases-container">
+                            <div class="body__databases-layout">
+
+                            </div>
+                            <img class="body__databases-picture" src="../dist/database/1142927.jpg" alt="">
+                        </div>
+                        <div class="body__databases-container">
+                            <div class="body__databases-layout">
+
+                            </div>
+                            <img class="body__databases-picture" src="../dist/database/1187981.jpg" alt="">
+                        </div>
+                        <div class="body__databases-container">
+                            <div class="body__databases-layout">
+
+                            </div>
+                            <img class="body__databases-picture" src="../dist/database/1213425.jpg" alt="">
+                        </div>
+                        <div class="body__databases-container">
+                            <div class="body__databases-layout">
+
+                            </div>
+                            <img class="body__databases-picture" src="../dist/database/1224493.jpg" alt="">
+                        </div>
+                        <div class="body__databases-container">
+                            <div class="body__databases-layout">
+
+                            </div>
+                            <img class="body__databases-picture" src="../dist/database/1243231.jpg" alt="">
+                        </div>
+                        <div class="body__databases-container">
+                            <div class="body__databases-layout">
+
+                            </div>
+                            <img class="body__databases-picture" src="../dist/database/1249991.jpg" alt="">
+                        </div>
+                        <div class="body__databases-container">
+                            <div class="body__databases-layout">
+
+                            </div>
+                            <img class="body__databases-picture" src="../dist/database/136458.jpg" alt="">
+                        </div>
+                        <div class="body__databases-container">
+                            <div class="body__databases-layout">
+
+                            </div>
+                            <img class="body__databases-picture" src="../dist/database/143923.jpg" alt="">
+                        </div>
+                        <div class="body__databases-container">
+                            <div class="body__databases-layout">
+
+                            </div>
+                            <img class="body__databases-picture" src="../dist/database/144330.jpg" alt="">
+                        </div>
+                        <div class="body__databases-container">
+                            <div class="body__databases-layout">
+
+                            </div>
+                            <img class="body__databases-picture" src="../dist/database/144354.jpg" alt="">
+                        </div>
+                        <div class="body__databases-container">
+                            <div class="body__databases-layout">
+
+                            </div>
+                            <img class="body__databases-picture" src="../dist/database/166816.jpg" alt="">
+                        </div>
+                        <div class="body__databases-container">
+                            <div class="body__databases-layout">
+
+                            </div>
+                            <img class="body__databases-picture" src="../dist/database/166978.jpg" alt="">
+                        </div>
+                        <div class="body__databases-container">
+                            <div class="body__databases-layout">
+
+                            </div>
+                            <img class="body__databases-picture" src="../dist/database/180481.jpg" alt="">
+                        </div>
+                        <div class="body__databases-container">
+                            <div class="body__databases-layout">
+
+                            </div>
+                            <img class="body__databases-picture" src="../dist/database/218050.jpg" alt="">
+                        </div>
+                        <div class="body__databases-container">
+                            <div class="body__databases-layout">
+
+                            </div>
+                            <img class="body__databases-picture" src="../dist/database/236199.jpg" alt="">
+                        </div>
+                        <div class="body__databases-container">
+                            <div class="body__databases-layout">
+
+                            </div>
+                            <img class="body__databases-picture" src="../dist/database/287683.jpg" alt="">
+                        </div>
+                        <div class="body__databases-container">
+                            <div class="body__databases-layout">
+
+                            </div>
+                            <img class="body__databases-picture" src="../dist/database/368441.jpg" alt="">
+                        </div>
+                        <div class="body__databases-container">
+                            <div class="body__databases-layout">
+
+                            </div>
+                            <img class="body__databases-picture" src="../dist/database/397122.jpg" alt="">
+                        </div>
+                        <div class="body__databases-container">
+                            <div class="body__databases-layout">
+
+                            </div>
+                            <img class="body__databases-picture" src="../dist/database/464666.jpg" alt="">
+                        </div>
+                        <div class="body__databases-container">
+                            <div class="body__databases-layout">
+
+                            </div>
+                            <img class="body__databases-picture" src="../dist/database/464669.jpg" alt="">
+                        </div>
+                        <div class="body__databases-container">
+                            <div class="body__databases-layout">
+
+                            </div>
+                            <img class="body__databases-picture" src="../dist/database/549472.jpg" alt="">
+                        </div>
+                        <div class="body__databases-container">
+                            <div class="body__databases-layout">
+
+                            </div>
+                            <img class="body__databases-picture" src="../dist/database/656326.jpg" alt="">
+                        </div>
+                        <div class="body__databases-container">
+                            <div class="body__databases-layout">
+
+                            </div>
+                            <img class="body__databases-picture" src="../dist/database/675280.jpg" alt="">
+                        </div>
+                        <div class="body__databases-container">
+                            <div class="body__databases-layout">
+
+                            </div>
+                            <img class="body__databases-picture" src="../dist/database/675897.jpg" alt="">
+                        </div>
+                        <div class="body__databases-container">
+                            <div class="body__databases-layout">
+
+                            </div>
+                            <img class="body__databases-picture" src="../dist/database/675949.jpg" alt="">
+                        </div>
+                        <div class="body__databases-container">
+                            <div class="body__databases-layout">
+
+                            </div>
+                            <img class="body__databases-picture" src="../dist/database/9438.jpg" alt="">
+                        </div>
+                        <div class="body__databases-container">
+                            <div class="body__databases-layout">
+
+                            </div>
+                            <img class="body__databases-picture" src="../dist/database/998271.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="body__right-container">
+                <div class="body__sign-in">
+                    <div class="body__title-container">
+                        <h2 class="body__title">
+                            <i class="fas fa-sign-in-alt fa-sm"></i>
+                            Sign In
+                        </h2>
+                        <a class="body__title-link" href="#">
+                            Sign Up
+                        </a>
+                    </div>
+                    <div class="body__sign-in-container">
+                        <form action="#" class="body__sign-in-form">
+                            <div class="body__sign-in-input-container">
+                                <b class="body__sign-in-title">
+                                    Username
+                                </b>
+                                <input class="body__sign-in-input" maxlength="16" type="text" name="username" id="">
+                            </div>
+                            <div class="body__sign-in-input-container">
+                                <b class="body__sign-in-title">
+                                    Password
+                                </b>
+                                <input class="body__sign-in-input" maxlength="16" type="text" name="password" id="">
+                            </div>
+                            <div class="body__sign-in-input-container body__sign-in-input-container--flex">
+                                <input type="checkbox" name="sign-in" id="remember-me">
+                                <label class="body__sign-in-label" for="remember-me">Remember me</label>
+                            </div>
+                            <div class="body__sign-in-input-container body__sign-in-input-container--flex">
+                                <input type="checkbox" name="sign-in" id="hide-me">
+                                <label class="body__sign-in-label" for="hide-me">Hide me</label>
+                            </div>
+                            <button class="body__sign-in-button" type="submit">
+                                Sign In
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <div class="body__community">
+                    <div class="body__title-container">
+                        <h2 class="body__title">
+                            <i class="fas fa-users"></i>
+                            Community
+                        </h2>
+                        <a class="body__title-link" href="#">
+                            View more
+                        </a>
+                    </div>
+                    <ul class="body__link-container">
+                        <li class="body__item">
+                            <a class="body__link" href="#">Articles</a>
+                        </li>
+                        <li class="body__item">
+                            <a class="body__link" href="#">Clubs</a>
+                        </li>
+                        <li class="body__item">
+                            <a class="body__link" href="#">Ads</a>
+                        </li>
+                        <li class="body__item">
+                            <a class="body__link" href="#">Users</a>
+                        </li>
+                    </ul>
+                    <div class="body__community-header">
+                        <p class="body__community-title">
+                            Readers' selection
+                        </p>
+                    </div>
+                    <div class="body__community-box">
+                        <a href="#" class="body__community-img-container"
+                            title="People who don’t like re-releases of figures they already own">
+                            <img class="body__community-img" src="../dist/community/noicon.png" alt="">
+                        </a>
+                        <div class="body__community-text-container">
+                            <a class="body__community-link" href="#"
+                                title="People who don’t like re-releases of figures they already own">
+                                <i class="fas fa-star"></i>
+                                People who don’t like re-releases of figures they already own
+                            </a>
+                            <p class="body__community-paragraph">
+                                1 day ago • Ask MFC
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="body__community-box">
+                        <a href="#" class="body__community-img-container" title="A figure story you cannot forget">
+                            <img class="body__community-img" src="../dist/community/52731.jpg" alt="">
+                        </a>
+                        <div class="body__community-text-container">
+                            <a class="body__community-link" href="#" title="A figure story you cannot forget">
+                                <i class="fas fa-star"></i>
+                                A figure story you cannot forget
+                            </a>
+                            <p class="body__community-paragraph">
+                                1 day ago • Diary
+                            </p>
+                        </div>
+                    </div>
+                    <div class="body__community-box">
+                        <a href="#" class="body__community-img-container"
+                            title="It's 6 am...and I just won my grail figure on Yahoo Auctions!">
+                            <img class="body__community-img" src="../dist/community/52736.jpg" alt="">
+                        </a>
+                        <div class="body__community-text-container">
+                            <a class="body__community-link" href="#"
+                                title="It's 6 am...and I just won my grail figure on Yahoo Auctions!">
+                                <i class="fas fa-star"></i>
+                                It's 6 am...and I just won my grail figure on Yahoo Auctions!
+                            </a>
+                            <p class="body__community-paragraph">
+                                1 day ago • Diary
+                            </p>
+                        </div>
+                    </div>
+                    <div class="body__community-header body__community-header--sticky">
+                        <p class="body__community-title">
+                            Newest articles
+                        </p>
+                    </div>
+                    <div class="body__community-box">
+                        <a href="#" class="body__community-img-container" title="RE: PowaPowa">
+                            <img class="body__community-img" src="../dist/community/1.jpg" alt="">
+                        </a>
+                        <div class="body__community-text-container">
+                            <a class="body__community-link" href="#" title="RE: PowaPowa">
+                                <i class="fas fa-star"></i>
+                                RE: PowaPowa
+                            </a>
+                            <p class="body__community-paragraph">
+                                2 hours ago • Misc
+                            </p>
+                        </div>
+                    </div>
+                    <div class="body__community-box">
+                        <a href="#" class="body__community-img-container"
+                            title='FML! Preorder of Taiga bunny delayed :"('>
+                            <img class="body__community-img" src="../dist/community/2.jpg" alt="">
+                        </a>
+                        <div class="body__community-text-container">
+                            <a class="body__community-link" href="#" title='FML! Preorder of Taiga bunny delayed :"('>
+                                <i class="fas fa-star"></i>
+                                FML! Preorder of Taiga bunny delayed :"(
+                            </a>
+                            <p class="body__community-paragraph">
+                                2 hours ago • Diary
+                            </p>
+                        </div>
+                    </div>
+                    <div class="body__community-box">
+                        <a href="#" class="body__community-img-container"
+                            title="There will be Prinz Eugene Final lap figure next year?">
+                            <img class="body__community-img" src="../dist/community/3.jpg" alt="">
+                        </a>
+                        <div class="body__community-text-container">
+                            <a class="body__community-link" href="#"
+                                title="There will be Prinz Eugene Final lap figure next year?">
+                                <i class="fas fa-star"></i>
+                                There will be Prinz Eugene Final lap figure next year?
+                            </a>
+                            <p class="body__community-paragraph">
+                                5 hours ago • Ask MFC
+                            </p>
+                        </div>
+                    </div>
+                    <div class="body__community-box">
+                        <a href="#" class="body__community-img-container"
+                            title="Looking for a special pose: figures leaning against walls etc">
+                            <img class="body__community-img" src="../dist/community/4.jpg" alt="">
+                        </a>
+                        <div class="body__community-text-container">
+                            <a class="body__community-link" href="#"
+                                title="Looking for a special pose: figures leaning against walls etc">
+                                <i class="fas fa-star"></i>
+                                Looking for a special pose: figures leaning against walls etc
+                            </a>
+                            <p class="body__community-paragraph">
+                                8 hours ago • Ask MFC
+                            </p>
+                        </div>
+                    </div>
+                    <div class="body__community-box">
+                        <a href="#" class="body__community-img-container" title="Opinions on Figuarts mini.">
+                            <img class="body__community-img" src="../dist/community/6.jpg" alt="">
+                        </a>
+                        <div class="body__community-text-container">
+                            <a class="body__community-link" href="#" title="Opinions on Figuarts mini.">
+                                <i class="fas fa-star"></i>
+                                Opinions on Figuarts mini.
+                            </a>
+                            <p class="body__community-paragraph">
+                                9 hours ago • Ask MFC
+                            </p>
+                        </div>
+                    </div>
+                    <div class="body__community-box">
+                        <a href="#" class="body__community-img-container"
+                            title="Do you think Nendoroid Dolls will get re-releases?">
+                            <img class="body__community-img" src="../dist/community/7.jpg" alt="">
+                        </a>
+                        <div class="body__community-text-container">
+                            <a class="body__community-link" href="#"
+                                title="Do you think Nendoroid Dolls will get re-releases?">
+                                <i class="fas fa-star"></i>
+                                Do you think Nendoroid Dolls will get re-releases?
+                            </a>
+                            <p class="body__community-paragraph">
+                                10 hours ago • Ask MFC
+                            </p>
+                        </div>
+                    </div>
+                    <div class="body__community-box">
+                        <a href="#" class="body__community-img-container" title="Don't need to get much next month.">
+                            <img class="body__community-img" src="../dist/community/8.jpg" alt="">
+                        </a>
+                        <div class="body__community-text-container">
+                            <a class="body__community-link" href="#" title="Don't need to get much next month.">
+                                <i class="fas fa-star"></i>
+                                Don't need to get much next month.
+                            </a>
+                            <p class="body__community-paragraph">
+                                13 hours ago • Diary
+                            </p>
+                        </div>
+                    </div>
+                    <div class="body__community-footer">
+                        <a class="body__community-footer-link" href="#">View more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__content">
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a class="footer__link" href="#"><img class="footer__mfc" src="../dist/nav-bar/webicon.png"
+                                alt=""> MyFigureCollection</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#"><i class="fas fa-star"></i> Support us</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#"><i class="far fa-gem"></i> Advertise</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#"><i class="fas fa-briefcase"></i> Partners</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#"><i class="far fa-life-ring"></i> Help</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#"><i class="fas fa-comment-dots"></i> chat</a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="footer__link" href="#"><i class="fas fa-shield-alt"></i> Privacy policy</a>
+                    </li>
+                </ul>
+                <div class="footer__social">
+                    <a class="footer__link" href="#"><i class="fas fa-chevron-up fa-lg"></i></a>
+                    <a class="footer__link" href="#"><i class="fab fa-facebook-f fa-lg"></i></a>
+                    <a class="footer__link" href="#"><i class="fab fa-twitter fa-lg"></i></a>
+                </div>
+            </div>
+            <div class="footer__container footer__container--padding">
+                <p>© 2008-2022 <a class="footer__link" href="#">Tsuki-Board.net</a> | dw04 TB v4.1 YF | Banner designed
+                    by lillyquin</p>
+            </div>
+        </div>
+    </footer>
+    <script src="../src/conponents/header.js"></script>
+</body>
+
+</html>

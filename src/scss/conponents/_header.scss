@@ -1,0 +1,282 @@
+@use '../util/extends';
+
+
+.header-layout
+{
+    background-color: rgba(27, 27, 27,.3);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.header
+{
+  @extend .flex;
+  background-image: url(../dist/nav-bar/298738.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: fixed;
+  z-index: 999;
+  height: 3.5em;
+  width: 100%;
+  top: 0;
+  transition: all ease-in-out .1s;
+  box-shadow: 0 0px 4px 1px rgb(43, 42, 42);
+  .hamburguer
+  {
+      display: none;
+  }
+}
+.nav-bar
+{
+    @extend .flex,.container;
+    background-image: url(../dist/nav-bar/298738.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    height: inherit;    
+    box-shadow: 0 -4px 5px 2px rgb(43, 42, 42);
+    &__site-name
+    {
+        @extend .flex, .item-hover, .relative-100;
+        justify-content: center;
+        min-width: 13.5em;
+        text-decoration: none;
+        color: #fff;
+        &:hover .text-figure
+        {
+           color: rgb(93, 160, 93);
+        }
+        &:hover .nav-bar__logo-container .nav-bar__logo
+        {
+            filter: invert(58%) sepia(19%) saturate(926%) hue-rotate(71deg) brightness(92%) contrast(93%);
+        }
+        &--mob
+        {
+            display: none;
+        }
+        &-float-list
+        {
+            position: absolute;
+            pointer-events: none;
+            opacity: 0;
+            width: 100%;
+            top: 0;
+            transform: translateY(-100%);
+            transition: ease-in-out .3s;
+            z-index: -999;
+            background-color: rgb(43, 42, 42);
+            border-radius: 0 0 .5em .5em;
+        }
+    }
+    &__logo-container
+    {
+        height: 1.2em;
+        margin-right: .2rem;
+    }
+    &__logo
+    {
+        height: 100%;     
+        filter: invert(100%) sepia(100%) saturate(1%) hue-rotate(161deg) brightness(104%) contrast(101%);
+    }
+    &__list
+    {
+        @extend .flex;
+        list-style: none;
+        height: 100%;
+    }
+    &__item
+    {
+        @extend .item-hover, .relative-100;
+        &-list
+        {
+            position: absolute;
+            top: 100%;
+            border-radius: 0 0 .4em .4em;
+            overflow: hidden;
+            width: 100%;
+            font-size: .8em;
+            list-style: none;
+            pointer-events: none;
+            opacity: 0;
+            background-color: rgb(43, 42, 42);
+            transition: ease-in-out .3s;
+        }
+        &-link
+        {
+            @extend .link;
+            width: 100%;
+            padding: .5em;
+            &--border
+            {
+                border-bottom: 1px dashed rgb(134, 134, 134);
+            }
+            &:hover
+            {
+                background-color: rgb(68, 68, 68);
+            }
+        }
+        &:hover &-list
+        {
+            opacity: 1;
+            pointer-events: auto;
+        }
+    }
+    &__link
+    {
+        @extend .link;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-size: .9em;
+        height: 100%;
+        text-align: center;
+        width: 7.5em;
+    }
+    &__input-container
+    {
+        padding: 0 .5em;
+        width: 34.7em;
+        position: relative;
+    }
+    &__input
+    {
+        outline: none;
+        width: 100%;
+        height: 2.3em;
+        border: none;
+        padding: 0 1.5em;
+        border-radius: 4em;
+        background-color: rgba(22, 22, 22,0.8);
+        color: #fff;
+    }
+    &__button-container
+    {
+       @extend .relative-100;
+        &--width
+        {
+            min-width: 1.5em;
+        }
+        &--shrink
+        {
+            min-width: 2.1em;
+        }
+    }
+    &__button
+    {
+        height: 100%;
+        width: 100%;
+        cursor: pointer;
+        background-color: unset;
+        outline: none;
+        border: none;
+        color: #fff;
+        @extend .item-hover;
+        &--font-size
+        {
+            font-size: .5em;
+        }
+    }
+    &__float-list
+    {
+        position: absolute;
+        background-color: rgb(43, 42, 42);
+        text-align: center;
+        list-style: none;
+        overflow: hidden;
+        width: 4.9em;
+        right: 0;
+        transform: translateY(-101%);
+        border-radius: .8em;
+        border-top-right-radius: 0;
+        z-index: -999;
+        transition: ease-in-out .3s;
+        &--right
+        {
+            text-align: left;
+        }
+    }
+    &__float-link
+    {
+        @extend .link;
+        width: 100%;
+        font-size: .7em;
+        padding: .5em .8em;
+        &:hover
+        {
+            background-color: rgb(68, 68, 68);
+        }
+    }
+    &__button-container.active &__float-list
+    {
+        transform: translateY(0);
+    }
+}
+
+@media only screen and (max-width:1097px)
+{
+    .nav-bar
+    {
+        &__site-name--desktop,&__list,&__input-container
+        {
+            display: none;
+        }
+        &__site-name-container
+        {
+            flex: 1;
+            height: 100%;
+        }
+        &__site-name
+        {          
+            &--mob
+            {
+                display: flex;
+            }
+            min-width: unset;
+            width: 6.5em;
+            gap: .2em;
+            &:hover i
+            {
+                color: rgb(93, 160, 93);
+            }
+            &-input
+            {
+                font-size: 15px;
+                width: 100%;
+                padding: .8rem 1.3rem;
+                border-radius: 6.8rem;
+                outline: none;
+                border: none;
+                color: #fff;
+                background-color:rgba(22, 22, 22,0.8);
+            }
+            &-input-container
+            {
+                padding: .5em 1em;
+                border: 3px solid red;       
+            }
+            &-float-link
+            {
+                display: block;
+                font-size: 17px;
+                font-weight: bold;
+                text-align: center;
+                padding: .9rem 0;
+                text-decoration: none;
+                color: #fff;
+                border-top: 1px dashed rgb(160, 160, 160);
+                &:hover
+                {
+                    background-color: rgb(68, 68, 68);
+                }
+            }
+        }
+        &__site-name-container.active &__site-name-float-list
+        {
+            top: 100%;
+            opacity: 1;
+            pointer-events: auto;
+            transform: translateY(0);
+        }
+        
+    }
+}
